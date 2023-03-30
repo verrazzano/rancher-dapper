@@ -24,7 +24,7 @@ if [ "$CROSS" = 1 ]; then
     echo Built ./bin/dapper-$(uname -s)-$(uname -m)
 elif [ "$1" = "install" ]; then
     CGO_ENABLED=0 go install -a -tags netgo -installsuffix netgo -ldflags "-X main.VERSION=$VERSION -extldflags '-static -s'" ./...
-    echo Built ./bin/dapper
+    echo Built "$GOPATH"/bin/dapper
 else
     CGO_ENABLED=0 go build -a -tags netgo -installsuffix netgo -ldflags "-X main.VERSION=$VERSION -extldflags '-static -s'" -o ./bin/dapper main.go
     echo Built ./bin/dapper
