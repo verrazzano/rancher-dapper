@@ -49,6 +49,10 @@ install-golangci-lint: ## install golangci-lint
 	}
 
 
-.PHONY: dapper-binary
-dapper-binary: check-golangci-lint
+.PHONY: go-build
+go-build: check-golangci-lint
 	./scripts/entry ci
+
+.PHONY: install
+install:
+	./scripts/build install
