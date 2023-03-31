@@ -25,7 +25,7 @@ deps: trash
 
 .PHONY: $(TARGETS)
 
-GOLANGCI_LINT_VERSION=1.52.2
+GOLANGCI_LINT_VERSION=1.49.0
 
 .PHONY: check-golangci-lint
 check-golangci-lint: install-golangci-lint ## run Go linters
@@ -54,5 +54,5 @@ go-build: check-golangci-lint
 	./scripts/entry ci
 
 .PHONY: install
-install:
+install: check-golangci-lint
 	./scripts/build install
