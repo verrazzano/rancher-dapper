@@ -55,4 +55,6 @@ go-build: check-golangci-lint
 
 .PHONY: install
 install: check-golangci-lint
+	./scripts/validate
 	./scripts/build install
+	./scripts/test
