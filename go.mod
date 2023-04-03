@@ -1,4 +1,4 @@
-module github.com/rancher/dapper
+module github.com/verrazzano/dapper
 
 go 1.17
 
