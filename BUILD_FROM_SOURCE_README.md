@@ -13,3 +13,10 @@ Install dapper in $GOPATH/bin
 ```
 make install
 ```
+
+### Tag Dapper
+
+```
+git tag v0.6.0-v8o
+git push origin v0.6.0-v8o
+```
