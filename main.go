@@ -6,7 +6,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
-	"github.com/verrazzano/dapper/file"
+	"github.com/verrazzano/rancher-dapper/file"
 )
 
 var (
